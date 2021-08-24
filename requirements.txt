@@ -1,0 +1,6 @@
+django
+django-bootstrap3
+bcrypt
+pillow
+misaka
+django-braces
