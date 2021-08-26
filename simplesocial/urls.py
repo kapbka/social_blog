@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-from . import views
+from simplesocial import views
 
 urlpatterns = [
     url(r"^$", views.HomePage.as_view(), name="home"),
@@ -25,5 +25,5 @@ urlpatterns = [
     url(r"^accounts/", include("accounts.urls", namespace="accounts")),
     url(r"^accounts/", include("django.contrib.auth.urls")),
     url(r"^posts/", include("posts.urls", namespace="posts")),
-    url(r"^groups/",include("groups.urls", namespace="groups")),
+    url(r"^groups/", include("groups.urls", namespace="groups")),
 ]
